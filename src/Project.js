@@ -112,7 +112,7 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                                     </p>
                                 </div>
                                 {link ? 
-                                    <a href={link} target='_blank' className='font-mono tracking-tighter text-lgtext-sm text-gray-700 hover:text-yellow-500'>
+                                    <a href={link} target='_blank' rel='noreferrer' className='font-mono tracking-tighter text-lgtext-sm text-gray-700 hover:text-yellow-500'>
                                         View on GitHub
                                     </a> :
                                     null

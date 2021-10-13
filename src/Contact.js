@@ -18,13 +18,13 @@ const Contact = () => {
                         </a>
                     </button>
                     <button className='border-2 border-black px-3 py-2 lg:mr-6 hover:bg-black hover:text-yellow-500'>
-                        <a href='https://www.linkedin.com/in/phillipiwanaga/' target='_blank'>
+                        <a href='https://www.linkedin.com/in/phillipiwanaga/' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={faLinkedin} className='mr-1'/>
                             /phillipiwanaga
                         </a>
                     </button>
                     <button className='border-2 border-black px-3 py-2 hover:bg-black hover:text-yellow-500'>
-                        <a href='https://drive.google.com/file/d/1xlz5f_EIwN6h9aGtCy8bkHCEQDpBhEPF/view?usp=sharing' target='_blank'>
+                        <a href='https://drive.google.com/file/d/1xlz5f_EIwN6h9aGtCy8bkHCEQDpBhEPF/view?usp=sharing' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={faGoogleDrive} className='mr-1'/>
                             resume
                         </a>
