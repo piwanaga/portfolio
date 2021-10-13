@@ -12,8 +12,7 @@ module.exports = {
       animation: {
         slideRight: 'right 1.8s ease-in-out',
         slideLeft: 'left 1.8s ease-in-out',
-        yellow: 'yellow .2s ease-in-out',
-        bounce: 'bounce 1s infinite'
+        yellow: 'yellow .2s ease-in-out'
       },
       keyframes: {
         right: {

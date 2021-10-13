@@ -19,10 +19,6 @@
         animation-delay: 3300ms;
     }
 
-    .delay-5 {
-        animation-delay: 4000ms;
-    }
-
     .fill-forwards {
         animation-fill-mode: forwards
     }

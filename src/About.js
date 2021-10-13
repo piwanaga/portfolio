@@ -12,7 +12,7 @@ const About = () => {
                 </div>
             </div>
             <div className='hidden md:inline relative'>
-                <img src={Skyline} className='absolute inset-0 h-full w-full object-cover object-center' />
+                <img src={Skyline} alt='seattle skyline' className='absolute inset-0 h-full w-full object-cover object-center' />
             </div>
         </div>
     )

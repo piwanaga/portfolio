@@ -12,6 +12,7 @@ const Projects = () => {
             <div className='w-11/12 md:w-3/5 lg:grid lg:grid-cols-2 lg:w-4/5 lg:items-start xl:w-7/12'>
                 {ProjectList.map(p => (
                     <Project 
+                        key={p.key}
                         link={p.link} 
                         title={p.title} 
                         description={p.description} 
@@ -20,6 +21,7 @@ const Projects = () => {
                         learned={p.learned}
                         forward={p.forward}
                         image={p.image}
+                        alt={p.alt}
                     />
                 ))}
             </div>

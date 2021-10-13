@@ -2,8 +2,9 @@ import React, { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { v4 as uuid } from 'uuid';
 
-const Project = ({ link, title, description, tech, implementation, learned, forward, image }) => {
+const Project = ({ link, title, description, tech, implementation, learned, forward, image, alt }) => {
     let [isOpen, setIsOpen] = useState(false)
 
     function closeModal() {
@@ -18,7 +19,7 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
         <>
             <button type="button" onClick={openModal}>
                 <div className='text-left border border-gray-100 mb-4 md:m-6 p-5 bg-white shadow hover:shadow-xl transition group'>
-                    <img src={image} className='w-full mb-4 opacity-80' />
+                    <img src={image} alt={alt} className='w-full mb-4 opacity-80' />
                     <h5 className='text-2xl font-semibold text-gray-900 mb-4'>{title}</h5>
                     <p className='font-mono tracking-tighter text-gray-500 text-xl mb-4 line-clamp-2'>{description}</p>
                     <p className='font-mono tracking-tighter text-md text-gray-500 group-hover:underline group-hover:text-yellow-500'>Read More</p>
@@ -77,11 +78,11 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                                     {description}
                                 </p>
                                 
-                                <img src={image} className='w-full opacity-90 mb-2'/>
+                                <img src={image} alt={alt} className='w-full opacity-90 mb-2'/>
                                
                                 <div className='flex flex-wrap mb-4'>
                                     {tech.map(t => (
-                                        <div className='bg-gray-700 shadow-md py-2 px-3 mr-2 mt-2'>
+                                        <div className='bg-gray-700 shadow-md py-2 px-3 mr-2 mt-2' key={uuid()}>
                                             <p className='text-white tracking-wide text-xs sm:text-sm font-semibold'>{t}</p>
                                         </div>)
                                     )}
