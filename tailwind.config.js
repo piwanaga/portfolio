@@ -12,7 +12,7 @@ module.exports = {
       animation: {
         slideRight: 'right 1.8s ease-in-out',
         slideLeft: 'left 1.8s ease-in-out',
-        yellow: 'yellow .2s ease-in-out'
+        makeYellow: 'makeYellow .2s ease-in-out'
       },
       keyframes: {
         right: {
@@ -22,7 +22,7 @@ module.exports = {
           },
           '100%': {
             opacity: 1,
-            transform: 'translateY(0)',
+            transform: 'translateX(0)',
             
           }
         },
@@ -33,10 +33,10 @@ module.exports = {
           },
           '100%': {
             opacity: 1,
-            transform: 'translateY(0)'
+            transform: 'translateX(0)'
           }
         },
-        yellow: {
+        makeYellow: {
           '0%': {
             color: 'black',
           },
