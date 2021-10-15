@@ -69,7 +69,7 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                                 >
                                     {title}
                                 </Dialog.Title>
-                                <button type="button" onClick={closeModal} className='text-gray-700 text-lg hover:text-gray-900 focus:none'>
+                                <button type="button" onClick={closeModal} className='text-gray-700 text-lg hover:text-gray-900 focus:ring-0'>
                                     <FontAwesomeIcon icon={ faTimes }/>
                                 </button>
                             </div>
