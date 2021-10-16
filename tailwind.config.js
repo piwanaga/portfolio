@@ -1,3 +1,4 @@
+const { colors } = require('tailwindcss/defaultTheme');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -5,15 +6,19 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+
       fontFamily: {
-        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+        sans: ['Staatliches', ...defaultTheme.fontFamily.sans],
+        serif: ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
         mono: ['Inconsolata', ...defaultTheme.fontFamily.mono]
       },
+
       animation: {
         slideRight: 'right 1.8s ease-in-out',
         slideLeft: 'left 1.8s ease-in-out',
         makeYellow: 'makeYellow .4s ease-in-out'
       },
+
       keyframes: {
         right: {
           '0%': {
@@ -46,6 +51,15 @@ module.exports = {
         },
       }
     },
+
+    colors: {
+      red: '#EF6461',
+      green: '#567568',
+      gray: '#CCDAD1',
+      brown: '#523A34',
+      black: colors.black
+    },
+
     screens: {
       'xs': '420px',
       ...defaultTheme.screens

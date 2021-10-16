@@ -15,7 +15,7 @@ const App = () => {
   const scrollToAbout = () => {
     scroller.scrollTo('aboutSection', {
       duration: 1500,
-      delay: 4800,
+      delay: 2800,
       smooth: true
     })
   }

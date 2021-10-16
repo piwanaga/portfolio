@@ -18,11 +18,11 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
     return (
         <>
             <button type="button" onClick={openModal}>
-                <div className='text-left border border-gray-100 mb-4 md:m-6 p-5 bg-white shadow hover:shadow-xl transition group'>
+                <div className='text-left mb-4 md:m-6 p-5 border-2 border-red hover:shadow transition group'>
                     <img src={image} alt={alt} className='w-full mb-4 opacity-80' />
-                    <h5 className='text-2xl font-semibold text-gray-900 mb-4'>{title}</h5>
-                    <p className='font-mono tracking-tighter text-gray-500 text-xl mb-4 line-clamp-2'>{description}</p>
-                    <p className='font-mono tracking-tighter text-md text-gray-500 group-hover:underline group-hover:text-yellow-500'>Read More</p>
+                    <h5 className='text-brown font-serif font-semibold text-2xl text-gray-800 mb-4'>{title}</h5>
+                    <p className='text-brown font-mono tracking-tighter text-gray-500 text-xl mb-4 line-clamp-2'>{description}</p>
+                    <p className='text-brown font-mono tracking-tighter text-md text-gray-500 group-hover:underline group-hover:text-red'>Read More</p>
                 </div>
             </button>
 
@@ -61,20 +61,20 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                        <div className="inline-block w-full max-w-3xl p-4 sm:p-6 my-2 overflow-hidden text-left align-middle transition-all transform bg-gray-100 shadow-xl">
+                        <div className="inline-block w-full max-w-3xl bg-gray p-4 sm:p-6 my-2 overflow-hidden text-left align-middle transition-all transform shadow-xl">
                             <div className='flex justify-between'>
                                 <Dialog.Title
                                     as="h3"
-                                    className="text-2xl sm:text-3xl font-medium leading-6 text-gray-800"
+                                    className="font-serif text-brown text-2xl font-semibold sm:text-3xl leading-6"
                                 >
                                     {title}
                                 </Dialog.Title>
-                                <button type="button" onClick={closeModal} className='text-gray-700 text-lg hover:text-gray-900 focus:ring-0'>
+                                <button type="button" onClick={closeModal} className='text-brown text-lg'>
                                     <FontAwesomeIcon icon={ faTimes }/>
                                 </button>
                             </div>
                             <div className="mt-2">
-                                <p className="font-mono tracking-tighter sm:text-xl text-gray-700 mb-4">
+                                <p className="font-mono text-brown tracking-tighter sm:text-xl mb-4">
                                     {description}
                                 </p>
                                 
@@ -82,37 +82,37 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                                
                                 <div className='flex flex-wrap mb-4'>
                                     {tech.map(t => (
-                                        <div className='bg-gray-700 shadow-md py-2 px-3 mr-2 mt-2' key={uuid()}>
-                                            <p className='text-white tracking-wide text-xs sm:text-sm font-semibold'>{t}</p>
+                                        <div className='bg-red shadow-md py-2 px-3 mr-2 mt-2' key={uuid()}>
+                                            <p className='text-gray font-serif tracking-wider text-sm xs:text-base'>{t}</p>
                                         </div>)
                                     )}
                                 </div>
                                 <div className='mb-2'>
-                                    <p className="text-xl text-gray-800 font-medium">
+                                    <p className="font-serif text-brown text-xl font-semibold">
                                         Implementation
                                     </p>
-                                    <p className="font-mono tracking-tighter sm:text-lg text-gray-700">
+                                    <p className="font-mono text-brown tracking-tighter sm:text-lg ">
                                         {implementation} 
                                     </p>
                                 </div>
                                 <div className='mb-2'>
-                                    <p className="text-xl text-gray-800 font-medium">
+                                    <p className="font-serif text-brown font-semibold text-xl ">
                                         What I learned
                                     </p>
-                                    <p className="font-mono tracking-tighter sm:text-lg text-gray-700">
+                                    <p className="font-mono text-brown tracking-tighter sm:text-lg ">
                                         {learned}
                                     </p>
                                 </div>
                                 <div className='mb-6'>
-                                    <p className="text-xl text-gray-800 font-medium">
+                                    <p className="font-serif text-brown font-semibold text-xl ">
                                         Moving Forward
                                     </p>
-                                    <p className="font-mono tracking-tighter sm:text-lg text-gray-700">
+                                    <p className="font-mono text-brown tracking-tighter sm:text-lg ">
                                         {forward}
                                     </p>
                                 </div>
                                 {link ? 
-                                    <a href={link} target='_blank' rel='noreferrer' className='font-mono tracking-tighter text-lgtext-sm text-gray-700 hover:text-yellow-500'>
+                                    <a href={link} target='_blank' rel='noreferrer' className='font-mono tracking-tighter text-brown text-sm underline hover:text-red'>
                                         View on GitHub
                                     </a> :
                                     null
