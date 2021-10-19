@@ -49,7 +49,7 @@ const ProjectList = [
         tech: ['GraphQL', 'Apollo Server', 'Apollo Client', 'React', 'TailwindCSS'] ,
         implementation: 'Setup my server, schema, resolver and data source using Apollo Server and GraphQL as a wrapper for an existing API endpoint. Used Apollo Client to query the server and fetch my data.',
         learned: 'The basics of using GraphQL and Apollo Server.',
-        forward: "I'd love to learn more about GraphQL and its use cases. For this project in particular I'd like to include functionality for easily comparing data between states such as in a table.",
+        forward: "I'd like to include functionality for comparing data between states with some sort of visualization.",
         image: covidStats,
         alt: 'covid stats screnshot'
     },

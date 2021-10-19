@@ -21,7 +21,7 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                 <div className='text-left mb-4 md:m-6 p-5 border-2 border-red hover:shadow transition group'>
                     <img src={image} alt={alt} className='w-full mb-4 opacity-80' />
                     <h5 className='text-brown font-serif font-semibold text-2xl text-gray-800 mb-4'>{title}</h5>
-                    <p className='text-brown font-mono tracking-tighter text-gray-500 text-xl mb-4 line-clamp-2'>{description}</p>
+                    <p className='text-brown font-mono tracking-tighter text-gray-500 text-lg mb-4 line-clamp-2'>{description}</p>
                     <p className='text-brown font-mono tracking-tighter text-md text-gray-500 group-hover:underline group-hover:text-red'>Read More</p>
                 </div>
             </button>
@@ -74,7 +74,7 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                                 </button>
                             </div>
                             <div className="mt-2">
-                                <p className="font-mono text-brown tracking-tighter sm:text-xl mb-4">
+                                <p className="font-mono text-brown tracking-tighter sm:text-lg mb-4">
                                     {description}
                                 </p>
                                 
