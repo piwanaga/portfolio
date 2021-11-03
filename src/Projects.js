@@ -7,7 +7,7 @@ const Projects = () => {
         <div className='w-screen bg-gray flex flex-col items-center py-20'>
             <div className='w-11/12 md:w-3/5'>
                 <p className='text-brown bg-red py-1 text-5xl text-center mb-10'>PROJECTS</p>
-                <p className='text-brown font-mono tracking-tighter text-center text-lg md:text-xl mb-10'>Some things I completed for school and some I did on the side. My goal with anything I work on is to learn something new and improve on what I already know.</p>
+                <p className='text-brown font-mono tracking-tighter text-center text-lg md:text-xl mb-10'>Some things I completed for school and some I've done on the side. My goal with anything I work on is to learn something new and improve on what I already know.</p>
             </div>
             <div className='w-11/12 md:w-3/5 lg:grid lg:grid-cols-2 lg:w-4/5 lg:items-start xl:w-7/12'>
                 {ProjectList.map(p => (

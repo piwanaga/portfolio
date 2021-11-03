@@ -15,6 +15,17 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
       setIsOpen(true)
     }
 
+    function renderLink() {
+        if (!link) return null
+        let linkText
+        title === 'CodePen' ? linkText = 'View CodePen' : linkText = 'View on GitHub'
+        return (
+            <a href={link} target='_blank' rel='noreferrer' className='font-mono tracking-tighter text-brown text-sm underline hover:text-red'>
+                {linkText}
+            </a>
+        )
+    }
+
     return (
         <>
             <button type="button" onClick={openModal}>
@@ -111,13 +122,7 @@ const Project = ({ link, title, description, tech, implementation, learned, forw
                                         {forward}
                                     </p>
                                 </div>
-                                {link ? 
-                                    <a href={link} target='_blank' rel='noreferrer' className='font-mono tracking-tighter text-brown text-sm underline hover:text-red'>
-                                        View on GitHub
-                                    </a> :
-                                    null
-                                }
-                                
+                                {renderLink()}
                             </div>
                         </div>
                         </Transition.Child>
