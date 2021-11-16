@@ -1,6 +1,6 @@
 import vetWait from './images/vet-wait.jpg';
 import eventFinder from './images/event-finder.jpg';
-import newsAggregator from './images/news-aggregator.jpg';
+// import newsAggregator from './images/news-aggregator.jpg';
 import covidStats from './images/covid-stats.jpg';
 import foodDiscovery from './images/food-discovery.jpg';
 import codePen from './images/code-pen.jpg';
