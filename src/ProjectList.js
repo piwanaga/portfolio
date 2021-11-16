@@ -42,18 +42,18 @@ const ProjectList = [
         image: vetWait,
         alt: 'vet wait screenshot'   
     },
-    {
-        key: 4,
-        link: 'https://github.com/piwanaga/News-Aggregator',
-        title: 'NewsAggregator',
-        description: "Site to search and browse current news articles using Bing's News API.",
-        tech: ['Python', 'Flask', 'PostgreSQL', 'SQLAlchemy', 'Jinja', 'JQuery', 'Bootstrap'],
-        implementation: 'Server and routes built with Flask. HTML templates served via JINJA templating. Models and DB setup using SQLAlchemy.',
-        learned: 'How to generate encrypted passwords and perform authentication using BCrypt as well as define models for creating and interacting with the database.',
-        forward: 'I would like to do more complex things using Python that involve more data and computation.',
-        image: newsAggregator,
-        alt: 'news aggregator screenshot'
-    },
+    // {
+    //     key: 4,
+    //     link: 'https://github.com/piwanaga/News-Aggregator',
+    //     title: 'NewsAggregator',
+    //     description: "Site to search and browse current news articles using Bing's News API.",
+    //     tech: ['Python', 'Flask', 'PostgreSQL', 'SQLAlchemy', 'Jinja', 'JQuery', 'Bootstrap'],
+    //     implementation: 'Server and routes built with Flask. HTML templates served via JINJA templating. Models and DB setup using SQLAlchemy.',
+    //     learned: 'How to generate encrypted passwords and perform authentication using BCrypt as well as define models for creating and interacting with the database.',
+    //     forward: 'I would like to do more complex things using Python that involve more data and computation.',
+    //     image: newsAggregator,
+    //     alt: 'news aggregator screenshot'
+    // },
     {
         key: 5,
         link: 'https://github.com/piwanaga/covid-stats',
