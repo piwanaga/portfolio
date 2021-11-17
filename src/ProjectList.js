@@ -8,7 +8,7 @@ import codePen from './images/code-pen.jpg';
 const ProjectList = [
     {   
         key: 1,
-        link: 'https://github.com/piwanaga/event-finder',
+        links: ['https://github.com/piwanaga/event-finder', 'https://event-finder.surge.sh/'],
         title: 'EventFinder',
         description: 'App for searching events based on location, keyword, or event type.',
         tech: ['Node', 'Express', 'PostgreSQL', 'React', 'Redux', 'JWT'],
@@ -20,7 +20,7 @@ const ProjectList = [
     },
     {
         key: 2,
-        link: 'https://codepen.io/piwanaga/pens/showcase',
+        links: ['https://codepen.io/piwanaga/pens/showcase'],
         title: 'CodePen',
         description: "My CodePen profile where I'm building small projects to strengthen my CSS and Javascript skills.",
         tech: ['HTML', 'CSS', 'Javascript'],
@@ -32,7 +32,7 @@ const ProjectList = [
     },
     {
         key: 3,
-        link: 'https://github.com/piwanaga/vet-wait',
+        links: ['https://github.com/piwanaga/vet-wait'],
         title: 'VetWait',
         description: 'Wait list for checking in pet owners and  sending an SMS notification when ready.',
         tech: ['React', 'Axios', 'TailwindCSS', 'Headless UI'],
@@ -44,7 +44,7 @@ const ProjectList = [
     },
     // {
     //     key: 4,
-    //     link: 'https://github.com/piwanaga/News-Aggregator',
+    //     links: 'https://github.com/piwanaga/News-Aggregator',
     //     title: 'NewsAggregator',
     //     description: "Site to search and browse current news articles using Bing's News API.",
     //     tech: ['Python', 'Flask', 'PostgreSQL', 'SQLAlchemy', 'Jinja', 'JQuery', 'Bootstrap'],
@@ -56,7 +56,7 @@ const ProjectList = [
     // },
     {
         key: 5,
-        link: 'https://github.com/piwanaga/covid-stats',
+        links: ['https://github.com/piwanaga/covid-stats'],
         title: 'CovidStats',
         description: 'My intro to GraphQL and Apollo Server. Look up Covid-19 stats by U.S. state.',
         tech: ['GraphQL', 'Apollo Server', 'Apollo Client', 'React', 'TailwindCSS'] ,
@@ -68,7 +68,7 @@ const ProjectList = [
     },
     {
         key: 6,
-        link: null,
+        links: null,
         title: 'FoodDiscovery App',
         description: 'My first freelance gig. I created the homepage for (now defunct) FoodDiscovery App.',
         tech: ['React', 'Material UI'],

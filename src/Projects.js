@@ -13,7 +13,7 @@ const Projects = () => {
                 {ProjectList.map(p => (
                     <Project 
                         key={p.key}
-                        link={p.link} 
+                        links={p.links} 
                         title={p.title} 
                         description={p.description} 
                         tech={p.tech}
