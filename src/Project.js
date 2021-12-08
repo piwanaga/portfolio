@@ -18,7 +18,14 @@ const Project = ({ links, title, description, tech, implementation, learned, for
     function renderLinks() {
         if (!links) return null
         let linkText
-        title === 'CodePen' ? linkText = 'View CodePen' : linkText = 'View on GitHub'
+        if (title === 'CodePen') {
+            linkText = 'View CodePen'
+        } else if (title === 'Bulletin FAQ') {
+            linkText = 'View FAQ Page'
+        } else {
+            linkText = 'View on GitHub'
+        }
+            
         return (
             <div>
                 <a href={links[0]} target='_blank' rel='noreferrer'>

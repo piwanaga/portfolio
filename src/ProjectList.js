@@ -1,9 +1,10 @@
 import vetWait from './images/vet-wait.jpg';
 import eventFinder from './images/event-finder.jpg';
-// import newsAggregator from './images/news-aggregator.jpg';
+import newsAggregator from './images/news-aggregator.jpg';
 import covidStats from './images/covid-stats.jpg';
 import foodDiscovery from './images/food-discovery.jpg';
 import codePen from './images/code-pen.jpg';
+import bulletinFAQ from './images/bulletin-faq.jpg';
 
 const ProjectList = [
     {   
@@ -32,7 +33,7 @@ const ProjectList = [
     },
     {
         key: 3,
-        links: ['https://github.com/piwanaga/vet-wait'],
+        links: ['https://github.com/piwanaga/vet-wait', 'https://piwanaga.github.io/vet-wait/'],
         title: 'VetWait',
         description: 'Wait list for checking in pet owners and  sending an SMS notification when ready.',
         tech: ['React', 'Axios', 'TailwindCSS', 'Headless UI'],
@@ -42,18 +43,18 @@ const ProjectList = [
         image: vetWait,
         alt: 'vet wait screenshot'   
     },
-    // {
-    //     key: 4,
-    //     links: 'https://github.com/piwanaga/News-Aggregator',
-    //     title: 'NewsAggregator',
-    //     description: "Site to search and browse current news articles using Bing's News API.",
-    //     tech: ['Python', 'Flask', 'PostgreSQL', 'SQLAlchemy', 'Jinja', 'JQuery', 'Bootstrap'],
-    //     implementation: 'Server and routes built with Flask. HTML templates served via JINJA templating. Models and DB setup using SQLAlchemy.',
-    //     learned: 'How to generate encrypted passwords and perform authentication using BCrypt as well as define models for creating and interacting with the database.',
-    //     forward: 'I would like to do more complex things using Python that involve more data and computation.',
-    //     image: newsAggregator,
-    //     alt: 'news aggregator screenshot'
-    // },
+    {
+        key: 4,
+        links: ['https://github.com/piwanaga/News-Aggregator'],
+        title: 'NewsAggregator',
+        description: "Site to search and browse current news articles using Bing's News API.",
+        tech: ['Python', 'Flask', 'PostgreSQL', 'SQLAlchemy', 'Jinja', 'JQuery', 'Bootstrap'],
+        implementation: 'Server and routes built with Flask. HTML templates served via JINJA templating. Models and DB setup using SQLAlchemy.',
+        learned: 'How to generate encrypted passwords and perform authentication using BCrypt as well as define models for creating and interacting with the database.',
+        forward: 'I would like to do more complex things using Python that involve more data and computation.',
+        image: newsAggregator,
+        alt: 'news aggregator screenshot'
+    },
     {
         key: 5,
         links: ['https://github.com/piwanaga/covid-stats'],
@@ -68,6 +69,18 @@ const ProjectList = [
     },
     {
         key: 6,
+        links: ['https://bulletin.zendesk.com/hc/en-us'],
+        title: 'Bulletin FAQ',
+        description: "Implemented a new theme for Bulletin's FAQ page using HTML and CSS.",
+        tech: ['HTML', 'CSS'],
+        implementation: "Edited colors, text, links, layout and other visuals to match company branding and include company assets.",
+        learned: 'How to edit existing code on a CRM platform to deliver results for a client.',
+        forward: 'I would love to work on more complex freelance projects, building custom functionality in addition to visuals.',
+        image: bulletinFAQ,
+        alt: 'bulletin faq screenshot'
+    },
+    {
+        key: 7,
         links: null,
         title: 'FoodDiscovery App',
         description: 'My first freelance gig. I created the homepage for (now defunct) FoodDiscovery App.',
