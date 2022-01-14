@@ -7,7 +7,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
     return (
         <div className='projects-bg w-screen flex flex-row justify-center pb-4 pt-32'>
-            <p className='text-brown font-mono tracking tighter text-sm mr-3'>{String.fromCharCode(169)} 2021 Phillip Iwanaga</p>
+            <p className='text-brown font-mono tracking tighter text-sm mr-3'>{String.fromCharCode(169)} 2022 Phillip Iwanaga</p>
             <a href='https://codepen.io/piwanaga/pens/showcase' target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={faCodepen} className='text-brown text-sm mr-3'/>
             </a>
