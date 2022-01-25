@@ -24,7 +24,7 @@ const Contact = () => {
                         </a>
                     </button>
                     <button className='bg-brown text-red font-serif tracking-wide px-3 py-2 hover:text-gray'>
-                        <a href='https://drive.google.com/file/d/1-vgt3mo2v1LiVCxozgWKAsKVTnYHQ8PM/view?usp=sharing' target='_blank' rel='noreferrer'>
+                        <a href='https://drive.google.com/file/d/1YyaFEzFq6FMr1BWVT9gn9vuAwn8p6f2B/view?usp=sharing' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={faGoogleDrive} className='mr-1'/>
                             resume
                         </a>
