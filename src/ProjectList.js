@@ -3,10 +3,10 @@ import eventFinder from './images/event-finder.jpg';
 import newsAggregator from './images/news-aggregator.jpg';
 import covidStats from './images/covid-stats.jpg';
 import foodDiscovery from './images/food-discovery.jpg';
-import codePen from './images/code-pen.jpg';
+// import codePen from './images/code-pen.jpg';
 import bulletinFAQ from './images/bulletin-faq.jpg';
 
-const ProjectList = [
+const projectList = [
     {   
         key: 1,
         links: ['https://github.com/piwanaga/event-finder', 'https://event-finder.surge.sh/'],
@@ -19,18 +19,18 @@ const ProjectList = [
         image: eventFinder,
         alt: 'event finder screenshot'
     },
-    {
-        key: 2,
-        links: ['https://codepen.io/piwanaga/pens/showcase'],
-        title: 'CodePen',
-        description: "My CodePen profile where I'm building small projects to strengthen my CSS and Javascript skills.",
-        tech: ['HTML', 'CSS', 'Javascript'],
-        implementation: "Focusing on what I can do with vanilla HTML, CSS and Javascript using CodePen's social development environment.",
-        learned: "The most challenging thing I've built was the scrolling text border. I learned to render text along an SVG path and animate the startOffset attribute to create a scrolling effect.",
-        forward: 'I will continue to build small projects with increasing complexity in order to learn more skills that can help me in future front end roles.',
-        image: codePen,
-        alt: 'code pen screenshot'   
-    },
+    // {
+    //     key: 2,
+    //     links: ['https://codepen.io/piwanaga/pens/showcase'],
+    //     title: 'CodePen',
+    //     description: "My CodePen profile where I'm building small projects to strengthen my CSS and Javascript skills.",
+    //     tech: ['HTML', 'CSS', 'Javascript'],
+    //     implementation: "Focusing on what I can do with vanilla HTML, CSS and Javascript using CodePen's social development environment.",
+    //     learned: "The most challenging thing I've built was the scrolling text border. I learned to render text along an SVG path and animate the startOffset attribute to create a scrolling effect.",
+    //     forward: 'I will continue to build small projects with increasing complexity in order to learn more skills that can help me in future front end roles.',
+    //     image: codePen,
+    //     alt: 'code pen screenshot'   
+    // },
     {
         key: 3,
         links: ['https://github.com/piwanaga/vet-wait', 'https://piwanaga.github.io/vet-wait/'],
@@ -93,4 +93,4 @@ const ProjectList = [
     }
 ]
 
-export default ProjectList
+export default projectList

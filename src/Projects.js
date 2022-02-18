@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project';
-import ProjectList from './ProjectList';
+import projectList from './projectList';
 
 const Projects = () => {
     return (
@@ -10,7 +10,7 @@ const Projects = () => {
                 <p className='text-brown font-mono tracking-tighter text-center text-lg md:text-xl mb-10'>Some things I completed for school and some I've done on the side. My goal with anything I work on is to learn something new and improve on what I already know.</p>
             </div>
             <div className='w-11/12 md:w-3/5 lg:grid lg:grid-cols-2 lg:w-4/5 lg:items-start xl:w-7/12'>
-                {ProjectList.map(p => (
+                {projectList.map(p => (
                     <Project 
                         key={p.key}
                         links={p.links} 
